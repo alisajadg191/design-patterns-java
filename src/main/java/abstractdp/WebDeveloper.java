@@ -8,10 +8,15 @@ package abstractdp;
  *
  * @author sali
  */
-public interface Employee {
+public class WebDeveloper implements Employee {
     
-    String name();
-    int salary();
+    public int salary() {
+        return 40000;
+    }
     
-    
+    public String name() {
+        System.out.println("i am a web developer");
+        return "WEB DEVELOPER";
+    }
 }
+

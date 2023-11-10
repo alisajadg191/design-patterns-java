@@ -8,10 +8,11 @@ package abstractdp;
  *
  * @author sali
  */
-public interface Employee {
-    
-    String name();
-    int salary();
-    
+public class ManagerFactory extends EmployeeAbstractFactory {
+
+    @Override
+    public Employee createEmployee() {
+        return new Manager();
+    }
     
 }

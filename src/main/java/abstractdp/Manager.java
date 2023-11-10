@@ -8,10 +8,17 @@ package abstractdp;
  *
  * @author sali
  */
-public interface Employee {
-    
-    String name();
-    int salary();
-    
+public class Manager implements Employee {
+
+    @Override
+    public String name() {
+        System.out.println("i am a manager");
+        return "MANAGER";
+    }
+
+    @Override
+    public int salary() {
+        return 75000;
+    }
     
 }

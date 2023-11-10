@@ -8,10 +8,12 @@ package abstractdp;
  *
  * @author sali
  */
-public interface Employee {
+public class EmployeeFactory {
     
-    String name();
-    int salary();
+    // get employee
     
+    public static Employee getEmployee(EmployeeAbstractFactory factory) {
+        return factory.createEmployee();
+    }
     
 }

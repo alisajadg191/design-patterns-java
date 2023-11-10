@@ -8,10 +8,7 @@ package abstractdp;
  *
  * @author sali
  */
-public interface Employee {
+abstract public class EmployeeAbstractFactory {
     
-    String name();
-    int salary();
-    
-    
+    public abstract Employee createEmployee();
 }
